@@ -1,0 +1,106 @@
+import java.util.Scanner;
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+    public static void main(String[] args) {
+
+        Cliente cliente = new Cliente();
+        Scanner sc = new Scanner(System.in);
+
+        while (true){
+
+            System.out.println("Seja bem-vindo(a) ao Maenga's Bank\n");
+            System.out.println("O que deseja fazer?\n");
+            System.out.println("1-Cadastro\n");
+            System.out.println("2-Sacar\n");
+            System.out.println("3-Depositar\n");
+            System.out.println("4-Verificar Saldo\n");
+            System.out.println("5-Alterar informações pessoais\n");
+            System.out.println("6-Sair\n");
+
+
+        }
+
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import java.util.Scanner;
+
+public class Cliente {
+    Scanner sc = new Scanner(System.in);
+    private String nome;
+    private double saldo;
+    private String cpf;
+    private String email;
+    private String senha;
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getCpf(){
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
+
+    public void Cadastrar(){
+        //Função para atribuir o valor das variaveis do cliente
+        System.out.println("Digite seu nome");
+        setNome(sc.nextLine());
+        System.out.println("Digite seu email");
+        setEmail(sc.nextLine());
+        System.out.println("Digite sua senha");
+        setSenha(sc.nextLine());
+        System.out.println("Digite seu cpf");
+        setCpf(sc.nextLine());
+    }
+
+}
+
